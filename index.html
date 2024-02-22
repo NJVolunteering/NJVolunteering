@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-      <title>NJ Volunteering</title>
-  </head>  
-  <body>
-      <h1> Volunteer In</h1>
-      <ol>
-          <li>Healthcare</li>
-          <li>Education</li>
-          <li>Community Service</li>
-          <li>Religious</li>
-          <li>Food Banks</li>
-      </ol>
-    </body>
+<head>
+  <title>NJ Volunteering</title>
+  <style>
+    body {
+      background-color: #f2f5f7; /* Light gray background */
+      font-family: Arial, sans-serif; /* Basic font stack */
+      margin: 0; /* Remove default margin */
+      display: flex; /* Enable vertical centering */
+      justify-content: center; /* Align content horizontally */
+      align-items: center; /* Align content vertically */
+      min-height: 100vh; /* Ensure full viewport height */
+    }
+
+    ol {
+      list-style: none; /* Remove default bullet style */
+      padding: 0; /* Remove default padding */
+      margin: 0; /* Remove default margin */
+      font-size: 1.5rem; /* Larger font size */
+      text-align: center; /* Center text within the list */
+    }
+
+    li {
+      margin: 1rem 0; /* Add spacing between list items */
+      border-bottom: 1px solid #ddd; /* Add subtle border */
+      padding: 0.5rem; /* Add some padding */
+      animation: fadein 2s ease-in-out forwards; /* Add fade-in animation */
+    }
+
+    @keyframes fadein {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Launguages Volunteer In</h1>
+  <ol>
+    <li>Health</li>
+    <li>Education</li>
+    <li>Community Service</li>
+  </ol>
+</body>
 </html>
