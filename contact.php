@@ -5,11 +5,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = $_POST["subject"];
     $message = $_POST["message"];
     
-    // Here you can perform actions like sending an email, storing in a database, etc.
-    // For example:
-    // mail("your@email.com", $subject, $message, "From: $name <$email>");
+    // Send an email with the collected information
+    $to = "llamapatel123@gmail.com";
+    $subject = "New message from $name: $subject";
+    $email_message = "Name: $name\nEmail: $email\nMessage: $message";
+    $headers = "From: $name <$email>";
     
-    // Redirect the user to a thank you page or back to the contact page
+    mail($to, $subject, $email_message, $headers);
+    
+    // Redirect the user to the thank you page
     header("Location: thank_you.html");
     exit;
 }
