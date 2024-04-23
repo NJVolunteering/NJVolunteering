@@ -2371,8 +2371,8 @@
 		flex-direction: column;
 	}
 
-	iframe{
-		width: 80%;
+	.mapiframe{
+		width: 90%;
 		height: 500px;
 	}
 /* Icon */
