@@ -1,0 +1,39 @@
+<template id="menuTemplate">
+  <nav id="nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li class="dropdown"> <a href="#" class="icon solid fa-angle-down">Menu</a>
+        <ul>
+          <li><a href="generic.html">Learn More</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="elements.html">Elements</a></li>
+          <li><a href="transportation.html">Transportation</a></li>
+          <li class="dropdown"> <a href="explore.html">Explore Opportunities</a>
+            <ul>
+              <li><a href="explore page/healthcare.html">Healthcare Events</a></li>
+              <li><a href="explore page/foodbank.html">Food Bank Events</a></li>
+              <li><a href="explore page/religious.html">Religious Events</a></li>
+              <li><a href="explore page/animalshelter.html">Animal Shelter Events</a></li>
+              <li><a href="explore page/seniorcitizen.html">Senior Citizen/Disabled Events</a></li>
+              <li><a href="explore page/miscevents.html">Misc. Local Events</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#" class="button">Sign Up</a></li>
+    </ul>
+  </nav>
+</template>
+
+<script>
+  class Menu {
+    constructor() {
+      const template = document.getElementById('menuTemplate');
+      this.menuElement = template.content.cloneNode(true);
+    }
+
+    getMenu() {
+      return this.menuElement;
+    }
+  }
+</script>
