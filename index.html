@@ -10,6 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="menu.html"></script>
+
 	</head>
 	<body class="landing is-preload">
 		<div id="page-wrapper">
@@ -19,28 +21,11 @@
 					<h1><a href="index.html">NJ Volunteering</a> by Anika, Prem, Vedanth</h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="#" class="icon solid fa-angle-down">Menu</a>
-								<ul>
-									<li><a href="generic.html">Learn More</a></li>
-									<li><a href="contact.html">Contact</a></li>
-									<li><a href="elements.html">Elements</a></li>
-									<li><a href="transportation.html">Transportation</a></li>
-									<li>
-										<a href="explore.html">Explore Opportunities</a>
-										<ul>
-											<li><a href="explore page/healthcare.html">Healthcare Events</a></li>
-											<li><a href="explore page/foodbank.html">Food Bank Events</a></li>
-											<li><a href="explore page/religious.html">Religious Events</a></li>
-											<li><a href="explore page/animalshelter.html">Animal Shelter Events</a></li>
-											<li><a href="explore page/seniorcitizen.html">Senior Citizen/Disabled Events</a></li>
-											<li><a href="explore page/miscevents.html">Misc. Local Events</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li><a href="#" class="button">Sign Up</a></li>
+							<script>
+  									const menu = new Menu();
+  									document.getElementById('header').appendChild(menu.getMenu());
+							</script>
+
 						</ul>
 					</nav>
 				</header>
