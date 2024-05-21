@@ -1,3 +1,6 @@
+Certainly! Here's the updated code with the header added to the healthcare page:
+
+```html
 <!DOCTYPE HTML>
 <!--
     Alpha by HTML5 UP
@@ -6,118 +9,182 @@
 -->
 <html>
     <head>
-        <title>Embedded Google Form</title>
+        <title>Healthcare Events - NJ Volunteering</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="../assets/css/main.css" />
         <style>
             body {
-                background-color: #00A36C; /* Changed to green */
-                text-align: center; /* Center all text */
+                background-color: #024340; /* Change the background color here */
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                color: #fff; /* Change text color to white */
             }
 
-            .box {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-            }
-
-            iframe {
+            #page-wrapper {
+                width: 90%;
                 margin: 0 auto;
             }
 
-            #nav ul {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+            header {
+                background-color: #47bb86; /* Change the header background color here */
+                color: #ffffff;
+                padding: 20px;
             }
 
-            #nav ul ul {
-                display: none;
-                position: absolute;
+            header h1 {
+                margin: 0;
+                font-size: 24px;
+                font-weight: bold;
             }
 
-            #nav ul li {
-                position: relative;
-                padding: 0 15px;
+            nav ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
             }
 
-            #nav ul li:hover > ul {
-                display: block;
-                top: 100%;
+            nav ul li {
+                display: inline;
+                margin-right: 20px;
             }
+
+            nav ul li a {
+                color: #0000000;
+                text-decoration: none;
+            }
+
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+
+            .container {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                background-color: #47bb86; /* Adjusted header box color */
+                padding: 20px;
+                border-radius: 5px;
+            }
+
+            .box {
+                background-color: #47bb86;
+                padding: 20px;
+                border-radius: 5px;
+                margin-top: 20px; /* Adjust margin to create space between boxes */
+            }
+
+            .box h3 {
+                margin-top: 0;
+            }
+
+            .box ul {
+                margin-top: 0;
+                padding-left: 20px;
+            }
+
+            footer {
+                background-color: #47bb86; /* Change the footer background color here */
+                color: #000000;
+                padding: 20px;
+                text-align: center;
+            }
+
+            footer ul {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+
+            footer ul li {
+                display: inline;
+                margin-right: 10px;
+            }
+
+            footer ul li a {
+                color: #000000;
+                text-decoration: none;
+            }
+
+            footer ul li a:hover {
+                text-decoration: underline;
+            }
+
         </style>
     </head>
     <body class="is-preload">
         <div id="page-wrapper">
-
-			<!-- Header -->
-				<header id="header" class="alt">
-					<h1><a href="index.html">NJ Volunteering</a> by Anika, Prem, Vedanth</h1>
-					<nav id="nav">
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li>
-								<a href="#" class="icon solid fa-angle-down">Menu</a>
-								<ul>
-									<li><a href="generic.html">Learn More</a></li>
-									<li><a href="contact.html">Contact</a></li>
-									<li><a href="elements.html">Elements</a></li>
-									<li>
-										<a href="#">Explore Opportunities</a>
-										<ul>
-											<li><a href="healthcare.html">Healthcare Events</a></li>
-											<li><a href="foodbank.html">Food Bank Events</a></li>
-											<li><a href="religious.html">Religious Events</a></li>
-											<li><a href="animalshelter.html">Animal Shelter Events</a></li>
-											<li><a href="seniorcitizen.html">Senior Citizen/Disabled Events</a></li>
-											<li><a href="miscevents.html">Misc. Local Events</a></li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li><a href="#" class="button">Sign Up</a></li>
-						</ul>
-					</nav>
-				</header>
+            <!-- Header! -->
+            <header id="header" class="alt">
+                <h1><a href="../index.html">NJ Volunteering</a> by Anika, Prem, Vedanth</h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li>
+                            <a href="#" class="icon solid fa-angle-down">Menu</a>
+                            <ul>
+                                <li><a href="../generic.html">Learn More</a></li>
+                                <li><a href="../contact.html">Contact</a></li>
+                                <li><a href="../elements.html">Elements</a></li>
+                                <li>
+                                    <a href="#">Explore Opportunities</a>
+                                    <ul>
+                                        <li><a href="healthcare.html">Healthcare Events</a></li>
+                                        <li><a href="foodbank.html">Food Bank Events</a></li>
+                                        <li><a href="religious.html">Religious Events</a></li>
+                                        <li><a href="animalshelter.html">Animal Shelter Events</a></li>
+                                        <li><a href="seniorcitizen.html">Senior Citizen/Disabled Events</a></li>
+                                        <li><a href="miscevents.html">Misc. Local Events</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="button">Sign Up</a></li>
+                    </ul>
+                </nav>
+            </header>
 
             <!-- Main -->
-                <section id="main" class="container medium">
-                    <header>
-                        <h2>Contact Us</h2>
-                        <p>Please sign up for any event you find interesting. Note each volunteering oppurtunity is a two hour commitment.</p>
-                    </header>
-                    <div class="box">
-                     <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&bgcolor=%23009688&title=Volunteering%20Events&src=NGVlMmQyNjZhMGI5YzE5MWUyMjYzOTIyOWRlYzNiZTY4MGMzYTBiNTMwZjNkODg2ODU4YzRiOGI4NmRjOTlmY0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NDNlZjI0MTM0YmNiOTFlMGQyYzcwOWExZjUxYWU4ODY2YTY2MzlkY2YyMjFiMjc0NGQwODQwZTExM2JhYjk0NEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=OWQ4ZGFjY2ZlNGQwNzQ0M2I0MjY2MDQ4MjhiNTk3OTQ0YjQxODNjYzE4NDM5OGU5YjFkMGYyZGY0NjlmMTg1ZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=MTVjMmVmYTI1NGEyZDBiNTdiY2RlY2M1NGE2NWJlOTIzMjBlNTYyZjdhMDY2MDg2NDhlMmI2MzY2NDY5MTlmMUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=NmZmNTI1N2EzMDMyNjUxYjkyODE5YmFhOTNiNWJiZDRmNmQ2MjJjYzNjNTcxMDdkMTJiNjNkZGVmZjcyYjhjOUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5&color=%23C0CA33&color=%23B39DDB&color=%23009688&color=%23F09300" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-                        <div style="text-align: center; margin-top: 20px;">
-                            <a href="index.html" class="button">Home</a>
-                        </div>
-                    </div>
-                </section>
+            <section id="main" class="container">
+                <header>
+                    <h2>Healthcare Events</h2>
+                    <p>Explore healthcare volunteering opportunities.</p>
+                </header>
+                <div class="box">
+                    <span class="image featured"><img src="../images/healthcare.jpeg" alt="" /></span>
+                    <h3>Supporting Healthcare Initiatives</h3>
+                    <p>Volunteering in healthcare offers a unique opportunity to make a difference in people's lives by providing essential support and care. Whether you're assisting medical professionals, helping patients and their families, or working behind the scenes, your contributions are invaluable.</p>
+                    <h3>Available Opportunities</h3>
+                    <p>Here are some of the healthcare volunteering opportunities available:</p>
+                    <ul>
+                        <li>Hospital volunteering</li>
+                        <li>Assisting in medical camps</li>
+                        <li>Providing support in nursing homes</li>
+                        <li>Health education programs</li>
+                        <li>Community health outreach</li>
+                    </ul>
+                </div>
+            </section>
 
             <!-- Footer -->
-                <footer id="footer">
-                    <ul class="icons">
-                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                        <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                        <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-                        <li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-                    </ul>
-                    <ul class="copyright">
-                        <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                    </ul>
-                </footer>
-
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                    <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                    <li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; NJ Volunteering. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </footer>
         </div>
 
         <!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.dropotron.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></
+        <script src="../assets/js/jquery.min.js"></script>
+        <script src="../assets/js/jquery.dropotron.min.js"></script>
+        <script src="../assets/js/jquery.scrollex.min.js"></script>
+        <script src="../assets/js/browser.min.js"></script>
+        <script src="../assets/js/breakpoints.min.js"></
