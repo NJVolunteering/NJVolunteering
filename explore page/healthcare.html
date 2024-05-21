@@ -1,3 +1,13 @@
+To make the requested changes, you will need to adjust the CSS and HTML structure accordingly. Here are the changes that will help you center the iframe, change the page background color to green, center the text, and make the navigation bar fit well:
+
+1. **Center the iframe**: Update the CSS to center the iframe within its container.
+2. **Change the background color**: Update the `body` CSS to set the background color to green.
+3. **Center the text**: Update the CSS to center the text.
+4. **Make the navigation bar fit well**: Adjust the navigation bar styling to make it look better.
+
+Here is the updated code:
+
+```html
 <!DOCTYPE HTML>
 <!--
     Alpha by HTML5 UP
@@ -12,7 +22,40 @@
         <link rel="stylesheet" href="assets/css/main.css" />
         <style>
             body {
-                background-color: #E9DAD9;
+                background-color: #00A36C; /* Changed to green */
+                text-align: center; /* Center all text */
+            }
+
+            .box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            iframe {
+                margin: 0 auto;
+            }
+
+            #nav ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #nav ul ul {
+                display: none;
+                position: absolute;
+            }
+
+            #nav ul li {
+                position: relative;
+                padding: 0 15px;
+            }
+
+            #nav ul li:hover > ul {
+                display: block;
+                top: 100%;
             }
         </style>
     </head>
@@ -48,7 +91,6 @@
 						</ul>
 					</nav>
 				</header>
-
 
             <!-- Main -->
                 <section id="main" class="container medium">
@@ -88,7 +130,4 @@
             <script src="assets/js/browser.min.js"></script>
             <script src="assets/js/breakpoints.min.js"></script>
             <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
-
-    </body>
-</html>
+            <script src="assets/js/main.js"></
