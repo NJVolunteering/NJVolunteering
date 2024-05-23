@@ -4,15 +4,15 @@
     "description": "A simple static site with Node.js and Express",
     "main": "server.js",
     "scripts": {
-      "start": "node server.js"
+        "start": "node server.js"
     },
     "engines": {
-      "node": ">=14.0.0",
-      "npm": ">=6.0.0"
+        "node": ">=14.0.0",
+        "npm": ">=6.0.0"
     },
     "dependencies": {
-      "express": "^4.17.1",
-      "path": "^0.12.7"
+        "express": "^4.17.1",
+        "path": "^0.12.7",
+        "pg": "^8.11.5"
     }
-  }
-  
+}
