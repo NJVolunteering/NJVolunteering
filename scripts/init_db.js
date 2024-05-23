@@ -1,19 +1,31 @@
-const { Pool } = require('pg');
+require('dotenv').config();
+const { Client } = require('pg');
 
-const pool = new Pool({
-  user: 'your_username',
-  host: 'your_host',
-  database: 'your_database',
-  password: 'your_password',
-  port: 5432,
-  ssl: false, // Set SSL to false
+const client = new Client({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
-pool.query('SELECT NOW()', (err, res) => {
+client.connect();
+
+const createTableQuery = `
+  CREATE TABLE IF NOT EXISTS users (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    age INTEGER NOT NULL,
+    interests TEXT NOT NULL
+  );
+`;
+
+client.query(createTableQuery, (err, res) => {
   if (err) {
-    console.error('Error executing query', err);
+    console.error(err);
   } else {
-    console.log('Query result:', res.rows[0]);
+    console.log('Table is successfully created');
   }
-  pool.end(); // Remember to end the pool when finished
+  client.end();
 });
