@@ -1,0 +1,17 @@
+{
+    "name": "njvolunteering",
+    "version": "1.0.0",
+    "description": "A simple static site with Node.js and Express",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "engines": {
+      "node": ">=14.0.0",
+      "npm": ">=6.0.0"
+    },
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+  
